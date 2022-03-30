@@ -8,6 +8,10 @@ article.tweets {
   width: 80vw;
 }
 
+article.tweets:hover {
+  box-shadow: #545149 0px 5px 15px;
+}
+
 article.tweets header {
   display: flex;
   justify-content: space-between;
@@ -28,6 +32,14 @@ article.tweets header > div > img {
   height: 120px;
   width: 120x;
   margin: 0 10px;
+}
+
+article.tweets header > a {
+  text-decoration: none;
+}
+
+article.tweets header > a:hover {
+  color: #2cd6e9;
 }
 
 article.tweets > .tweet {
