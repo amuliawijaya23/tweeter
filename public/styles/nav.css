@@ -28,3 +28,17 @@ nav > div > i {
   margin-top: -10px;
   color: #F4210A;
 }
+
+@media only screen and (max-width: 640px) {
+  nav div p {
+    display: none;
+  }
+
+  nav div i {
+    font-size: 48px;
+  }
+
+  nav div i:hover {
+   color: #ffffff;
+  }
+}

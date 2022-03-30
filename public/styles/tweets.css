@@ -5,7 +5,7 @@ article.tweets {
   margin-top: 40px;
   margin-bottom: 40px;
   flex-flow: column wrap;
-  height: 450px;
+  height: 500px;
   width: 80vw;
   background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
   background-color: #f2f1c6;
@@ -71,20 +71,66 @@ article.tweets footer {
   flex-flow: row wrap;
   justify-content: space-between;
   align-content: flex-end;
-  height: 100px;
+  height: 150px;
 }
 
 article.tweets footer div{
   display: flex;
-  margin: 20px 20px;
+  margin: 10px 10px;
   flex-direction: row;
   align-items: center;
 }
 
 article.tweets footer p{
-  margin: 20px 10px;
+  margin: 10px 10px;
 }
 
 article.tweets footer i{
-  margin: 20px 10px;
+  margin: 10px 10px;
+}
+
+@media only screen and (max-width: 640px) {
+  article.tweets header > div {
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+
+  article.tweets header > div > img {
+   height: 80px;
+   width: 80px;
+   margin-top: 10px;
+   margin-bottom: -30px;
+  }
+
+  article.tweets header > div > h2 {
+    font-size: 28px;
+  }
+
+  article.tweets > .tweet {
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin: 10px 20px;
+  }
+
+  article.tweets footer {
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-content: space-around;
+  }
+
+  article.tweets footer div {
+    align-content: center;
+    justify-content: space-around;
+  }
+  
+  article.tweets footer p{
+    margin: 0px 10px;
+    font-size: 18px;
+  }
+  
+  article.tweets footer i{
+    margin: 20px 10px;
+    font-size: 32px;
+  }
 }

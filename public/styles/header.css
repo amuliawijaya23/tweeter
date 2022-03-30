@@ -18,3 +18,22 @@
   width: 300px;
   margin-bottom: -50px;
 }
+
+@media only screen and (max-width: 640px) {
+  .header {
+    display: flex;
+    height: 250px;
+    width: 50vw;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .profile-image > img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .header h2 {
+    font-size: 28px;
+  }
+}
