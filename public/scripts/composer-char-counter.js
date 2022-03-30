@@ -1,14 +1,14 @@
 $(document).ready(function () { 
   $('textarea').on("input", function () {
-    const counter = document.getElementById('counter');
     const tweetLength = $(this).val().length;
     const charLimit = 140 - tweetLength;
-    $(counter)[0].value = charLimit;
+    $('#counter').text(charLimit);
+
 
     if (charLimit < 0) {
-      $('#counter').css('color', 'red');
+      $('#counter').css('color', '#FF0000');
     } else {
-      $('#counter').css('color', 'black');
+      $('#counter').css('color', '#000000');
     }
   })
 });

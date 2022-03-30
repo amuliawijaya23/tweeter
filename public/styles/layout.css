@@ -34,5 +34,6 @@ nav {
    display: flex;
    background-color: #f4f1ec;
    width: 98%;
-   justify-content: center;
+   flex-flow: column wrap;
+   align-content: center;
  }
