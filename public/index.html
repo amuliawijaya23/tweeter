@@ -31,10 +31,10 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <h1>tweeter</h1>
       <div>
-        <p><b>Write</b> a new tweet!</p>
-        <i class="fa-solid fa-angles-down"></i>
+          <p><b>Write</b> a new tweet!</p>
+          <i class="fa-solid fa-angles-down"></i>
       </div>
     </nav>
 
@@ -49,7 +49,9 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
+        <header>
+          <h2>Compose Tweet</h2>
+        </header>
         <form action="/tweets" method="POST">
           <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
@@ -59,6 +61,53 @@
         </form>
       </section>
       <section class="feeds">
+        <article class="tweets">
+          <header>
+            <div>
+              <img src="/images/avatar.png">
+              <h2>James Bly</h2>
+            </div>
+            <a href="/">@JBly23</a>
+          </header>
+          <div class="tweet">
+            <p>nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.unc mattis.</p>
+          </div>
+          <footer>
+            <div>
+              <p>7 years ago</p>
+              <p>1000000 likes</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-heart" id="like"></i>
+              <i class="fa-solid fa-retweet" id="retweet"></i>
+              <i class="fa-solid fa-flag" id="flag"></i>
+            </div>
+          </footer>
+        </article>
+         <!-- MULTI TWEETS TEST ENDS HERE -->
+         <article class="tweets">
+          <header>
+            <div>
+              <img src="/images/avatar.png">
+              <h2>James Bly</h2>
+            </div>
+            <a href="/">@JBly23</a>
+          </header>
+          <div class="tweet">
+            <p>nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.unc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.</p>
+          </div>
+          <footer>
+            <div>
+              <p>7 years ago</p>
+              <p>1000000 likes</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-heart" id="like"></i>
+              <i class="fa-solid fa-retweet" id="retweet"></i>
+              <i class="fa-solid fa-flag" id="flag"></i>
+            </div>
+          </footer>
+        </article>
         <article class="tweets">
           <header>
             <div>
@@ -82,6 +131,53 @@
             </div>
           </footer>
         </article>
+        <article class="tweets">
+          <header>
+            <div>
+              <img src="/images/avatar.png">
+              <h2>James Bly</h2>
+            </div>
+            <a href="/">@JBly23</a>
+          </header>
+          <div class="tweet">
+            <p>nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.unc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.</p>
+          </div>
+          <footer>
+            <div>
+              <p>7 years ago</p>
+              <p>1000000 likes</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-heart" id="like"></i>
+              <i class="fa-solid fa-retweet" id="retweet"></i>
+              <i class="fa-solid fa-flag" id="flag"></i>
+            </div>
+          </footer>
+        </article>
+        <article class="tweets">
+          <header>
+            <div>
+              <img src="/images/avatar.png">
+              <h2>James Bly</h2>
+            </div>
+            <a href="/">@JBly23</a>
+          </header>
+          <div class="tweet">
+            <p>nunc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.unc mattis enim ut tellus elementum sagittis vitae et leo duis ut diam quam nulla porttitor massa id neque aliquam.</p>
+          </div>
+          <footer>
+            <div>
+              <p>7 years ago</p>
+              <p>1000000 likes</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-heart" id="like"></i>
+              <i class="fa-solid fa-retweet" id="retweet"></i>
+              <i class="fa-solid fa-flag" id="flag"></i>
+            </div>
+          </footer>
+        </article>
+          <!-- MULTI TWEETS TEST ENDS HERE -->
       </section>
     </main>
   </body>
