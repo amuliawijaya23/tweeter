@@ -2,7 +2,7 @@
   display: flex;
   height: 400px;
   width: 100vw;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   justify-content: center;
   background-color: #EF9014;
@@ -10,7 +10,11 @@
   background-image: url("https://www.transparenttextures.com/patterns/az-subtle.png");
 }
 
-.profile-image {
-  margin-top: 20px;
+.profile-image > img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 300px;
   margin-bottom: -50px;
 }
