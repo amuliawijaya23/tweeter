@@ -16,6 +16,15 @@
   display: none;
 }
 
+.new-tweet #invalid {
+  display: flex;
+  color: red;
+  width: 75vw;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
 .new-tweet div {
   display: flex;
   justify-content: space-between;
@@ -55,5 +64,13 @@
 
   .new-tweet textarea {
     margin-top: 20px;
+  }
+
+  .new-tweet #invalid {
+    width: 70vw;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    font-size: 18px;
   }
 }
