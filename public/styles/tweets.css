@@ -41,7 +41,7 @@ article.tweets header > div {
 article.tweets header > div > img {
   display: flex;
   height: 30px;
-  width: 30x;
+  width: 30px;
   margin-top: 0.8em;
   margin-left: -0.8em;
   margin-right: 0.5em;
@@ -63,8 +63,8 @@ article.tweets > .tweet {
   justify-items: center;
   align-items: center;
   padding: 1em;
-  font-size: 0.7em;
-  height: 40%;
+  font-size: 0.6em;
+  height: 35%;
   margin: 0.1em 1em;
 }
 
