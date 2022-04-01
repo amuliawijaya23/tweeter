@@ -1,8 +1,8 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-// *** Load and Render Tweets ***
+  // *** Load and Render Tweets ***
 
-  const createTweetElement = function (tweets) {
+  const createTweetElement = function(tweets) {
     let $tweet = $('<article>').addClass('tweets');
     
     //create header element
@@ -19,10 +19,11 @@ $(document).ready(function () {
     let $symbols = $('<div>').append($('<i>').addClass('fa-solid fa-heart').attr('id', 'like'), $('<i>').addClass('fa-solid fa-retweet').attr('id', 'retweet'), $('<i>').addClass('fa-solid fa-flag').attr('id', 'flag'))
     let $footer = $('<footer>').append($dateAndLikes, $symbols);
     
+    // Append header, content, and footer into the tweet article
     return $tweet.append($header, $content, $footer);
   };
   
-  const renderTweets = function (tweets) {
+  const renderTweets = function(tweets) {
     for (const tweet of tweets) {
       $('.feeds').prepend(createTweetElement(tweet));
     }
@@ -40,13 +41,17 @@ $(document).ready(function () {
     })
   }
   
+  // call the function to load tweets when the page loads
   loadTweets();
   
   const postTweet = () => {
+    // if text area is empty
     if (!$('#tweet-text').val().trim()) {
       $('#invalid').text('You cannot post an empty tweet!');
       $('#invalid').css({'border': '2px solid red'}).show();
       $('#tweet-text').val(''),focus();
+
+      // if text area exceeds 140 characters
     } else if ($('#tweet-text').val().length > 140) {
       $('#invalid').text('Your tweet is too long!');
       $('#error').css({'border': '2px solid red'}).show();
@@ -71,6 +76,7 @@ $(document).ready(function () {
     postTweet();
   })
 
+  // Submit form when pressing enter but prevents it when pressing shift
   $('#tweet-text').keydown((event) => {
     if (event.keyCode === 13 && !event.shiftKey) {
       postTweet();
