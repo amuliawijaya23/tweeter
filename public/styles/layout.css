@@ -84,7 +84,6 @@ body {
   }
 
   .container footer{
-    height: 10vh;
     justify-self: flex-end;
     margin-top: 5vh;
    }
