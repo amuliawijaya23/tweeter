@@ -1,15 +1,15 @@
+/* -- New Tweet Container -- */
 .new-tweet {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 100wv;
+  width: 90%;
+  flex-flow: column wrap;
 }
 
+/* -- New Tweet Header -- */
 .new-tweet header {
   display: flex;
-  padding: 1em;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  justify-content: center;
+  align-content: center;
 }
 
 .new-tweet header h2 {
@@ -19,12 +19,22 @@
 .new-tweet #invalid {
   display: flex;
   color: red;
-  width: 75vw;
-  justify-content: center;
-  align-items: center;
-  padding: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
 }
 
+/* -- New Tweet Text Area -- */
+
+.new-tweet textarea {
+  background-color: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #545149;  
+  margin-bottom: 0.5em;
+}
+
+/* -- New Tweet Below Text Area -- */
 .new-tweet div {
   display: flex;
   justify-content: space-between;
@@ -48,29 +58,8 @@
   outline: none;
 }
 
-.new-tweet textarea {
-  background-color: transparent;
-  width: 80vw;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid #545149;
-  margin-bottom: 15px;
-}
 
-@media only screen and (max-width: 640px) {
-  .new-tweet {
-    width: 80vw;
-  }
 
-  .new-tweet textarea {
-    margin-top: 20px;
-  }
+@media only screen and (min-width: 1024px) {
 
-  .new-tweet #invalid {
-    width: 70vw;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em;
-    font-size: 18px;
-  }
 }
