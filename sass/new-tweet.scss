@@ -1,3 +1,5 @@
+@import "variables";
+
 /* -- New Tweet Container -- */
 .new-tweet {
   display: flex;
@@ -18,18 +20,19 @@
 
 .new-tweet #invalid {
   display: flex;
-  color: #F4210A;
+  color: $arrow-color;
   padding: 0.5em;
   border-radius: 5px;
 }
 
 /* -- New Tweet Text Area -- */
+
 .new-tweet textarea {
   background-color: transparent;
   width: 100%;
   border: none;
   outline: none;
-  border-bottom: 2px solid #545149;
+  border-bottom: 2px solid $text-color;  
   margin-bottom: 0.5em;
 }
 
@@ -42,8 +45,8 @@
 }
 
 .new-tweet div button {
-  background-color: #257cbf;
-  font-family: "Bungee", cursive;
+  background-color: $first-color;
+  font-family: 'Bungee', cursive;
   color: white;
   padding: 5px;
   border: 2px solid #545149;
@@ -52,7 +55,13 @@
 }
 
 .new-tweet div button:hover {
-  background-color: #f0d23e;
-  color: #257cbf;
+  background-color: $second-color;
+  color: $first-color;
   outline: none;
+}
+
+
+
+@media only screen and (min-width: 1024px) {
+
 }

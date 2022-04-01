@@ -1,8 +1,9 @@
+@import "variables";
+
 html {
   box-sizing: border-box;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: $text-font;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -10,14 +11,18 @@ html {
 /*
  * Global layout stuff
  */
+
+
+
+
 body {
   display: flex;
   width: 100vw;
   flex-flow: column wrap;
   justify-content: center;
   align-content: center;
-  color: #545149;
-  background-color: #f0d23e;
+  color: $text-color;
+  background-color: $second-color;
   background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
   font-size: 24px;
 }
@@ -25,15 +30,16 @@ body {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.container {
-  display: flex;
-  width: 100%;
-  flex-flow: column;
-  background-color: white;
-  align-items: center;
-}
 
-.container footer {
+ .container {
+   display: flex;
+   width: 100%;
+   flex-flow: column;
+   background-color: white;
+   align-items: center;
+ }
+
+ .container footer{
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -41,20 +47,20 @@ body {
   font-size: 0.8em;
   margin-top: 2vh;
   padding: 1em;
-  border-top: 3px solid #545149;
-}
+  border-top: 3px solid $text-color;
+ }
 
-.container footer .footerLinks {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
+ .container footer .footerLinks {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: space-around;
+ }
 
-.container footer .footerLinks a {
+ .container footer .footerLinks a {
   text-decoration: none;
-}
+ }
 
-@media only screen and (min-width: 1024px) {
+ @media only screen and (min-width: 1024px) {
   main {
     display: flex;
     flex-flow: row wrap;
@@ -69,17 +75,17 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-    bottom: 0;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    bottom:0;
+    overflow-y:scroll;
+    overflow-x:hidden;
   }
 
-  .container footer {
+  .container footer{
     justify-self: flex-end;
     margin-top: 5vh;
-  }
+   }
 
-  .container footer div {
+  .container footer div{
     margin-top: -0.3vh;
     margin-bottom: -0.3vh;
     font-size: 0.7em;

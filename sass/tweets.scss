@@ -1,3 +1,5 @@
+@import "variables";
+
 .feeds {
   display: flex;
   flex-flow: column wrap;
@@ -12,14 +14,14 @@ article.tweets {
   height: 16vh;
   width: 95%;
   margin: 0.5em 0.5em;
-  border: 3px solid #545149;
+  border: 3px solid $text-color;
   border-radius: 5px;
   background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
-  background-color: #f2f1c6;
+  background-color: $note-color;
 }
 
 article.tweets:hover {
-  box-shadow: #545149 0px 5px 15px;
+  box-shadow: $text-color 0px 5px 15px;
 }
 
 /* --- Tweet Header --- */
@@ -53,10 +55,11 @@ article.tweets header > a {
 }
 
 article.tweets header > a:hover {
-  color: #257cbf;
+  color: $first-color;
 }
 
 /* --- Tweet Content --- */
+
 article.tweets > .tweet {
   display: flex;
   justify-items: center;
@@ -68,6 +71,7 @@ article.tweets > .tweet {
 }
 
 /* --- Tweet Footer --- */
+
 article.tweets footer {
   display: flex;
   flex-flow: row wrap;
@@ -78,34 +82,34 @@ article.tweets footer {
   width: 95%;
   font-size: 0.5em;
   margin-top: 0.3em;
-  border-top: 2px solid #545149;
+  border-top: 2px solid $text-color;
 }
 
-article.tweets footer div {
+article.tweets footer div{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0.5em 0em;
 }
 
-article.tweets footer p {
+article.tweets footer p{
   margin: 0 0.5em;
 }
 
-article.tweets footer i {
+article.tweets footer i{
   margin: 0 0.5em;
 }
 
 #like:hover {
-  color: #F4210A;
+  color: $arrow-color;
 }
 
 #retweet:hover {
-  color: #257cbf;
+  color: $first-color;
 }
 
 #flag:hover {
-  color: #F4210A;
+  color: $arrow-color;
 }
 
 @media only screen and (min-width: 1024px) {
