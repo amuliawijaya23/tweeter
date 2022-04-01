@@ -19,7 +19,12 @@ Tweeter is a simple, single-page Twitter clone with some much less features. Thi
 - md5
 
 ## Final Product
-!["full view"](#)
-!["mobile view"](#)
-!["error message"](#)
+!["full view"](https://github.com/amuliawijaya23/tweeter/blob/master/docs/tweeter-1024.png?raw=true)
+the image above shows the app layout at 1024px to work with desktop or devices with larger screen.
+
+!["mobile view"](https://github.com/amuliawijaya23/tweeter/blob/master/docs/tweeter-mobile.png?raw=true)
+Otherwise the app will have the layout above as default.
+
+!["error message"](https://github.com/amuliawijaya23/tweeter/blob/master/docs/tweeter%20error%20msg.png?raw=true)
+Validate if text area is not empty or does not exceed the character limit.
 
