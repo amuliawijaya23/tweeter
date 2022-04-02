@@ -1,36 +1,24 @@
-.header {
+@media only screen and (max-width: 1023px) {
+  .header {
+    justify-content: center;
+    margin-top: 5vh;
+    padding: 10px;
+  }
+  .header img {
+    margin-top: 15vh;
+  }
+}
+.header .profile-image {
   display: flex;
-  height: 50vh;
-  width: 100vw;
   flex-flow: column wrap;
   align-items: center;
-  justify-content: center;
-  padding: 1.5em;
-  background-color: #f0d23e;
-  margin-top: 10vh;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
 }
-
-.profile-image > img {
-  display: flex;
-  height: 300px;
-  width: 300px;
-  margin-bottom: -1.5em;
+.header .profile-image img {
+  margin-top: 5vh;
+  height: 350px;
+  width: 350px;
 }
-
-@media only screen and (min-width: 1024px) {
-  .header {
-    height: 90vh;
-    width: 45%;
-    position: fixed;
-    left: 0;
-    justify-content: flex-start;
-  }
-
-  .profile-image > img {
-    display: flex;
-    height: 300px;
-    width: 300px;
-    margin-bottom: -1.5em;
-  }
+.header .profile-image h2 {
+  font-size: 2.5rem;
+  margin-top: -1vh;
 }

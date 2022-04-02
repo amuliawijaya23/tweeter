@@ -2,122 +2,68 @@
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  width: 90%;
+  padding: 10px;
+}
+.feeds .tweets {
   width: 100%;
-  font-size: 1em;
-}
-
-article.tweets {
-  display: flex;
-  flex-flow: column wrap;
-  height: 16vh;
-  width: 95%;
-  margin: 0.5em 0.5em;
-  border: 3px solid #545149;
-  border-radius: 5px;
-  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
   background-color: #f2f1c6;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook-dark.png");
+  border: 3px solid black;
+  border-radius: 10px;
+  margin-bottom: 1vh;
 }
-
-article.tweets:hover {
-  box-shadow: #545149 0px 5px 15px;
-}
-
-/* --- Tweet Header --- */
-article.tweets header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5em;
-  height: 25%;
-  font-size: 0.5em;
-}
-
-article.tweets header > div {
-  display: flex;
-  justify-items: space-evenly;
-  margin: 1em 0.5em;
-}
-
-article.tweets header > div > img {
-  display: flex;
-  height: 30px;
-  width: 30px;
-  margin-top: 0.8em;
-  margin-left: -0.8em;
-  margin-right: 0.5em;
-}
-
-article.tweets header > a {
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
-article.tweets header > a:hover {
-  color: #257cbf;
-}
-
-/* --- Tweet Content --- */
-article.tweets > .tweet {
-  display: flex;
-  justify-items: center;
-  align-items: center;
-  padding: 1em;
-  font-size: 0.6em;
-  height: 35%;
-  margin: 0.1em 1em;
-}
-
-/* --- Tweet Footer --- */
-article.tweets footer {
+.feeds .tweets header {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  align-self: center;
-  height: 20%;
-  width: 95%;
-  font-size: 0.5em;
-  margin-top: 0.3em;
-  border-top: 2px solid #545149;
-}
-
-article.tweets footer div {
-  display: flex;
-  flex-direction: row;
   align-items: center;
-  margin: 0.5em 0em;
+  justify-content: space-between;
+  padding: 5px;
 }
-
-article.tweets footer p {
-  margin: 0 0.5em;
+.feeds .tweets header img {
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 2px;
 }
-
-article.tweets footer i {
-  margin: 0 0.5em;
+.feeds .tweets header h2 {
+  font-size: 2rem;
 }
-
-#like:hover {
-  color: #F4210A;
+.feeds .tweets header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  margin-right: 0.5vw;
 }
-
-#retweet:hover {
+.feeds .tweets div {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 5px;
+  justify-items: space-around;
+  font-size: 1.5rem;
+}
+.feeds .tweets .tweet {
+  font-size: 1.8rem;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  word-break: break-word;
+}
+.feeds .tweets .tweet p {
+  margin-left: 0.5vw;
+}
+.feeds .tweets footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+.feeds .tweets footer p {
+  margin: 0 0.5vw;
+}
+.feeds .tweets footer i {
+  margin: 0 0.5vw;
+  font-size: 2rem;
+}
+.feeds .tweets footer i:hover {
   color: #257cbf;
-}
-
-#flag:hover {
-  color: #F4210A;
-}
-
-@media only screen and (min-width: 1024px) {
-  article.tweets {
-    height: 23vh;
-  }
-
-  article.tweets > .tweet {
-    font-size: 0.7em;
-  }
-
-  article.tweets > footer {
-    font-size: 0.8em;
-  }
 }

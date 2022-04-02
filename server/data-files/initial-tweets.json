@@ -8,7 +8,7 @@
     "content": {
       "text": "If I have seen further it is by standing on the shoulders of giants"
     },
-    "created_at": 1648622433625
+    "created_at": 1648597549250
   },
   {
     "user": {
@@ -19,6 +19,28 @@
     "content": {
       "text": "Je pense , donc je suis"
     },
-    "created_at": 1648708833625
+    "created_at": 1648683949250
+  },
+  {
+    "user": {
+      "name": "Samantha",
+      "avatars": "https://i.imgur.com/lRUnDgU.png",
+      "handle": "@samantha"
+    },
+    "content": {
+      "text": "Once more into the unknown my friend, once more...."
+    },
+    "created_at": 1648770349250
+  },
+  {
+    "user": {
+      "name": "James",
+      "avatars": "https://i.imgur.com/DVpDmdR.png",
+      "handle": "@james"
+    },
+    "content": {
+      "text": "Overconfidence leads to hubris, too much humility results in servitude"
+    },
+    "created_at": 1648856749250
   }
 ]

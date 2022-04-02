@@ -82,6 +82,20 @@ $(document).ready(function() {
       postTweet();
     }
   });
+
+  $('.compose').click(function() {
+    $('.new-tweet').slideToggle('fast');
+    $('.new-tweet textarea').focus();
+  });
+
+  $('.top-toogle').click(function() {
+    $(document).off("scroll");
+    $("html, body").stop(true, false).animate({ scrollTop: "0" }, () => {
+      $(document).scroll(topScroll);
+    });
+    $('.new-tweet textarea').focus();
+  });
+
 });
 
 

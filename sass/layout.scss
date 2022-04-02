@@ -3,91 +3,162 @@
 html {
   box-sizing: border-box;
   font-family: $text-font;
+  @media only screen and (max-width: 1023px) {
+    font-size: 14px;
+   }
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
-/*
- * Global layout stuff
- */
-
-
-
-
 body {
-  display: flex;
+  @media only screen and (max-width: 1023px) {
+    @include column-center;
+   }
+  background-color: $text-color;
+  font-family: $text-font;
   width: 100vw;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-content: center;
-  color: $text-color;
-  background-color: $second-color;
-  background-image: url("https://www.transparenttextures.com/patterns/clean-textile.png");
-  font-size: 24px;
+
+  .top-page {
+    @media only screen and (max-width: 1023px) {
+      width: 100%;
+      @include column-center;
+    }
+
+    nav {
+      @include row-center;
+      width: 100vw;
+      background-color: $first-color;
+      color: white;
+      font-family: $nav-font;
+    }
+  
+    .header {
+      @media only screen and (max-width: 1023px) {
+        width: 100%;
+      }
+      @include column-center;
+      background-color: $second-color;
+
+      .profile-image {
+        padding: 10px;
+        justify-content: center;
+      }
+    }
+
+  }
+
+  main {
+    flex-grow: 3;
+    @media only screen and (max-width: 1023px) {
+      @include column-center;
+      width: 100%;
+      
+      .container {
+        border-top: 3px solid black;
+      }
+    }
+    
+    .container {
+      width: 100%;
+      @include column-center;
+      padding: 5px;
+      background-color: white;
+      border-bottom: 3px solid black;
+    }
+
+  }
+
+  .footer {
+    @include column-center;
+    background-color: white;
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: black;
+    page-break-after: always;
+
+    .footerLinks {
+      @include row-center;
+      justify-content: center;
+      padding: 10px;
+      margin-bottom: 1vh;
+
+      a {margin: 0 2vw; font-size: 1.5rem; margin-top: 0.5vh; text-decoration: none};
+
+    }
+  }
+
+  .top-toogle {
+    @include column-center;
+    position: fixed;
+    justify-content: center;
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    right: 1vw;
+    bottom: 2vh;
+    background-color: $first-color;
+    color: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    &:hover {
+      opacity: 1;
+      font-size: 3rem;
+      background-color: $second-color;
+      color: $first-color;
+      cursor: pointer;
+    }
+  }
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
 
- .container {
-   display: flex;
-   width: 100%;
-   flex-flow: column;
-   background-color: white;
-   align-items: center;
- }
+// For Screen resoultion 1024px and up
 
- .container footer{
-  display: flex;
-  flex-flow: column wrap;
-  align-content: center;
-  width: 90%;
-  font-size: 0.8em;
-  margin-top: 2vh;
-  padding: 1em;
-  border-top: 3px solid $text-color;
- }
-
- .container footer .footerLinks {
-   display: flex;
-   flex-flow: row wrap;
-   justify-content: space-around;
- }
-
- .container footer .footerLinks a {
-  text-decoration: none;
- }
-
- @media only screen and (min-width: 1024px) {
-  main {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-    width: 100%;
+@media only screen and (min-width: 1024px) {
+  html {
+    font-size: 10px;
   }
 
-  .container {
-    display: flex;
-    margin-top: 10vh;
-    width: 55%;
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom:0;
-    overflow-y:scroll;
-    overflow-x:hidden;
-  }
+  body {
+    @include row-center;
 
-  .container footer{
-    justify-self: flex-end;
-    margin-top: 5vh;
-   }
+    .top-page {
+      @include column-center;
+      width: 35%;
+      left: 0;
 
-  .container footer div{
-    margin-top: -0.3vh;
-    margin-bottom: -0.3vh;
-    font-size: 0.7em;
+  
+      nav {
+        @include row-center;
+        width: 35%;
+        background-color: $first-color;
+        color: white;
+        font-family: $nav-font;
+      }
+    
+      .header {
+        width: 35%;
+        justify-content: flex-start;
+        margin-top: 5vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+        .profile-image {
+          margin-top: 5vh;
+        }
+      }
+    }
+  
+    main {
+      @include row-center;
+      justify-content: center;
+      width: 65%;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
   }
 }

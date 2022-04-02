@@ -1,58 +1,40 @@
-/* -- New Tweet Container -- */
 .new-tweet {
-  display: flex;
   width: 90%;
-  flex-flow: column wrap;
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
 }
-
-/* -- New Tweet Header -- */
-.new-tweet header {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.new-tweet header h2 {
+.new-tweet h2 {
   display: none;
 }
-
 .new-tweet #invalid {
   display: flex;
+  justify-content: center;
   color: #F4210A;
-  padding: 0.5em;
+  padding: 5px;
   border-radius: 5px;
 }
-
-/* -- New Tweet Text Area -- */
-.new-tweet textarea {
-  background-color: transparent;
+.new-tweet form textarea {
   width: 100%;
+  outline: none;
   border: none;
-  outline: none;
-  border-bottom: 2px solid #545149;
-  margin-bottom: 0.5em;
+  border-bottom: 2px solid black;
 }
-
-/* -- New Tweet Below Text Area -- */
-.new-tweet div {
+.new-tweet form div {
   display: flex;
-  justify-content: space-between;
+  flex-flow: row wrap;
   align-items: center;
-  margin-top: 20px;
+  justify-content: space-between;
+  margin-top: 1vh;
 }
-
-.new-tweet div button {
+.new-tweet form button {
   background-color: #257cbf;
-  font-family: "Bungee", cursive;
   color: white;
+  font-family: "Bungee", cursive;
+  border: 2px solid black;
+  border-radius: 5px;
   padding: 5px;
-  border: 2px solid #545149;
-  border-radius: 10px;
-  outline: none;
 }
-
-.new-tweet div button:hover {
+.new-tweet form button:hover {
   background-color: #f0d23e;
   color: #257cbf;
-  outline: none;
 }

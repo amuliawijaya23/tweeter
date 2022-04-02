@@ -1,7 +1,23 @@
+// COLOR
 $first-color: #257cbf;
 $second-color: #f0d23e;
 $text-color:#545149;
 $arrow-color: #F4210A;
 $note-color: #f2f1c6;
+
+// FONT
 $nav-font: 'Bungee', cursive;
 $text-font: 'Source Sans Pro', sans-serif;
+
+// ORIENTATION
+@mixin column-center {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+@mixin row-center {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}

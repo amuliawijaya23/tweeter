@@ -1,56 +1,28 @@
 nav {
-  display: flex;
-  width: 100vw;
-  height: 10vh;
-  font-family: "Bungee", cursive;
-  padding: 1.5em;
-  background-color: #257cbf;
-  color: white;
-  align-items: center;
   justify-content: space-between;
+  padding: 5px;
   position: fixed;
   top: 0;
+  z-index: 1000;
 }
-
-nav > h1 {
-  font-size: 1.5em;
+nav h1 {
+  font-size: 3rem;
+  padding: 5px;
 }
-
 nav div {
   display: flex;
-  padding: 1.5em;
-  padding-bottom: 2em;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
-  font-family: "Source Sans Pro", sans-serif;
+  padding: 20px;
 }
-
 nav div p {
   display: none;
 }
-
 nav div i {
+  font-size: 5rem;
   color: #F4210A;
-  font-size: 2em;
 }
-
 nav div i:hover {
   color: white;
-}
-
-@media only screen and (min-width: 1024px) {
-  nav div {
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-  }
-
-  nav div p {
-    display: flex;
-    margin-right: 0.5em;
-  }
-
-  nav > div > i {
-    font-size: 1.5em;
-  }
+  cursor: pointer;
 }

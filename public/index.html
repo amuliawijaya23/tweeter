@@ -22,28 +22,36 @@
   </head>
 
   <body>
-    <!-- Top nav bar (fixed) -->
     
-    <nav>
-      <h1>tweeter</h1>
-      <div id="compose">
-          <p><b>Write</b>&nbsp;a new tweet!</p>
-            <i class="fa-solid fa-angles-down"></i>
-      </div>
-    </nav>
-    <main>
-      <!-- Header -->
-    <header class="header">
-      <div class="profile-image">
-          <img src="/images/avatar.png"> 
-      </div>
-      <div>
-          <h2>James Bly</h2>
-      </div>
-    </header>
-    <!-- Page-specific (main) content here -->
-    <section class="container">
+    <div class="top-page">
 
+      <!-- Top nav bar (fixed) -->
+      <nav>
+        <h1>tweeter</h1>
+        <div class="compose">
+          <p><b>Write</b>&nbsp;a new tweet!</p>
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+      </nav>
+      
+      <!-- Header -->
+      <header class="header">
+        <div class="profile-image">
+          <img src="/images/avatar.png"> 
+          <h2>James Bly</h2>
+        </div>
+        <div class="top-toogle">
+          <i class="fas fa-arrow-up"></i>
+        </div>
+      </header>
+      
+    </div>
+    
+    
+    <!-- Page-specific (main) content here -->
+    <main>
+    <div class="container">
+    
       <!-- Compose Tweet -->
       <section class="new-tweet">
 
@@ -53,9 +61,7 @@
         </header>
 
         <form action="/tweets" method="POST">
-          <div>
-            <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
-          </div>
+            <textarea name="text" class= "tweet-text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
@@ -67,17 +73,21 @@
       <!-- Tweet Feed -->
       <section class="feeds">
       </section>
-      <footer>
-        <div class="disclaimer">
-          <p>Created by Tweeter. &copy; 2022 All Rights Reserved.</p>
-        </div>
-        <div class="footerLinks">
-          <a href="/"> Agreement</a>
-          <a href="/">Privacy Policy</a>
-        </div>
-      </footer>
-    </section>
-    </main>
+    </div>
+    <footer class="footer">
+      <div class="footerLinks">
+        <a href="/"> Terms of Service</a>
+        <a href="/">Privacy Policy</a>
+        <a href="/">Cookie Policy</a>
+        <a href="/">Marketing</a>
+        <a href="/">Advertising</a>
+        <a href="/">Careers</a>
+      </div>
+      <div class="disclaimer">
+        <p>Created by Tweeter. &copy; 2022 All Rights Reserved.</p>
+      </div>
+    </footer>
+  </main>
   </body>
 
       <!-- External JS -->

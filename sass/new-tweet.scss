@@ -1,67 +1,127 @@
 @import "variables";
 
-/* -- New Tweet Container -- */
+// /* -- New Tweet Container -- */
+// .new-tweet {
+//   display: flex;
+//   width: 90%;
+//   flex-flow: column wrap;
+// }
+
+// /* -- New Tweet Header -- */
+// .new-tweet header {
+//   display: flex;
+//   justify-content: center;
+//   align-content: center;
+// }
+
+// .new-tweet header h2 {
+//   display: none;
+// }
+
+// .new-tweet #invalid {
+//   display: flex;
+//   color: $arrow-color;
+//   padding: 0.5em;
+//   border-radius: 5px;
+// }
+
+// /* -- New Tweet Text Area -- */
+
+// .new-tweet textarea {
+//   background-color: transparent;
+//   width: 100%;
+//   border: none;
+//   outline: none;
+//   border-bottom: 2px solid $text-color;  
+//   margin-bottom: 0.5em;
+// }
+
+// /* -- New Tweet Below Text Area -- */
+// .new-tweet div {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin-top: 20px;
+// }
+
+// .new-tweet div button {
+//   background-color: $first-color;
+//   font-family: 'Bungee', cursive;
+//   color: white;
+//   padding: 5px;
+//   border: 2px solid #545149;
+//   border-radius: 10px;
+//   outline: none;
+// }
+
+// .new-tweet div button:hover {
+//   background-color: $second-color;
+//   color: $first-color;
+//   outline: none;
+// }
+
+
+
+// @media only screen and (min-width: 1024px) {
+
+// }
+
+// <section class="new-tweet">
+
+//   <header>
+//    <h2>Compose Tweet</h2>
+//    <p id="invalid"></p>
+//   </header>
+
+//    <form action="/tweets" method="POST">
+//      <div>
+//        <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+//      </div>
+//      <div>
+//        <button type="submit">Tweet</button>
+//        <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
+//      </div>
+//     </form>
+//  </section>
+
 .new-tweet {
-  display: flex;
   width: 90%;
-  flex-flow: column wrap;
-}
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
 
-/* -- New Tweet Header -- */
-.new-tweet header {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
+  h2 {display: none};
 
-.new-tweet header h2 {
-  display: none;
-}
+  #invalid {
+    display: flex;
+    justify-content: center;
+    color: $arrow-color;
+    padding: 5px;
+    border-radius: 5px;
+  }
 
-.new-tweet #invalid {
-  display: flex;
-  color: $arrow-color;
-  padding: 0.5em;
-  border-radius: 5px;
-}
+  form {
+    
+    textarea {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 2px solid black;
+    }
 
-/* -- New Tweet Text Area -- */
+    div {
+      @include row-center;
+      justify-content: space-between;
+      margin-top: 1vh;
+    }
 
-.new-tweet textarea {
-  background-color: transparent;
-  width: 100%;
-  border: none;
-  outline: none;
-  border-bottom: 2px solid $text-color;  
-  margin-bottom: 0.5em;
-}
-
-/* -- New Tweet Below Text Area -- */
-.new-tweet div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.new-tweet div button {
-  background-color: $first-color;
-  font-family: 'Bungee', cursive;
-  color: white;
-  padding: 5px;
-  border: 2px solid #545149;
-  border-radius: 10px;
-  outline: none;
-}
-
-.new-tweet div button:hover {
-  background-color: $second-color;
-  color: $first-color;
-  outline: none;
-}
-
-
-
-@media only screen and (min-width: 1024px) {
-
+    button {
+      background-color: $first-color;
+      color: white;
+      font-family: $nav-font;
+      border: 2px solid black;
+      border-radius: 5px;
+      padding: 5px;
+      &:hover {background-color: $second-color; color: $first-color;}
+    }
+  }
 }
