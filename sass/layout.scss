@@ -95,17 +95,17 @@ body {
     position: fixed;
     justify-content: center;
     font-size: 2rem;
-    width: 60px;
-    height: 60px;
-    right: 1vw;
-    bottom: 2vh;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
     background-color: $first-color;
     color: white;
     opacity: 0.5;
     border-radius: 50%;
     &:hover {
       opacity: 1;
-      font-size: 3rem;
+      font-size: 2.5rem;
       background-color: $second-color;
       color: $first-color;
       cursor: pointer;
@@ -130,6 +130,13 @@ body {
       background-color: $first-color;
       color: white;
       font-family: $nav-font;
+
+      div {
+        @include row-center;
+        p {display: flex; font-family: $text-font; font-size: 2rem;};
+        i {font-size: 2.5rem; margin: 0 0.5vw};
+      }
+
     }
 
     .top-page {
