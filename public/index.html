@@ -20,11 +20,10 @@
     <link rel="stylesheet" href="/styles/tweets.css" type="text/css" />
 
   </head>
-
   <body>
-    
-    <div class="top-page">
 
+    <!-- Nav & Header-->
+    <div class="top-page">
       <!-- Top nav bar (fixed) -->
       <nav>
         <h1>tweeter</h1>
@@ -32,8 +31,7 @@
           <p><b>Write</b>&nbsp;a new tweet!</p>
           <i class="fa-solid fa-angles-down"></i>
         </div>
-      </nav>
-      
+      </nav>   
       <!-- Header -->
       <header class="header">
         <div class="profile-image">
@@ -44,36 +42,31 @@
           <i class="fas fa-arrow-up"></i>
         </div>
       </header>
-      
     </div>
     
     
     <!-- Page-specific (main) content here -->
     <main>
     <div class="container">
-    
       <!-- Compose Tweet -->
       <section class="new-tweet">
-
         <header>
           <h2>Compose Tweet</h2>
           <p id="invalid"></p>
         </header>
-
         <form action="/tweets" method="POST">
-            <textarea name="text" class= "tweet-text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+          <textarea name="text" class= "tweet-text" id="tweet-text" placeholder="What are you humming about?"></textarea>
           <div>
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" id="counter" for="tweet-text">140</output>
           </div>
-
         </form>
       </section>
-
       <!-- Tweet Feed -->
       <section class="feeds">
       </section>
     </div>
+    <!-- footer -->
     <footer class="footer">
       <div class="footerLinks">
         <a href="/"> Terms of Service</a>
