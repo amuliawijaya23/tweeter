@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   font-family: $text-font;
   @media only screen and (max-width: 1023px) {
-    font-size: 14px;
+    font-size: 10px;
    }
 }
 *, *:before, *:after {
@@ -14,6 +14,7 @@ html {
 body {
   @media only screen and (max-width: 1023px) {
     @include column-center;
+    justify-content: center;
    }
   background-color: $text-color;
   font-family: $text-font;
@@ -21,8 +22,8 @@ body {
 
   .top-page {
     @media only screen and (max-width: 1023px) {
-      width: 100%;
       @include column-center;
+      width: 100%;
     }
 
     nav {
