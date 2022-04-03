@@ -20,18 +20,18 @@ body {
   font-family: $text-font;
   width: 100vw;
 
+  nav {
+    @include row-center;
+    width: 100vw;
+    background-color: $first-color;
+    color: white;
+    font-family: $nav-font;
+  }
+
   .top-page {
     @media only screen and (max-width: 1023px) {
       @include column-center;
       width: 100%;
-    }
-
-    nav {
-      @include row-center;
-      width: 100vw;
-      background-color: $first-color;
-      color: white;
-      font-family: $nav-font;
     }
   
     .header {
@@ -124,28 +124,29 @@ body {
   body {
     @include row-center;
 
+    nav {
+      @include row-center;
+      width: 100%;
+      background-color: $first-color;
+      color: white;
+      font-family: $nav-font;
+    }
+
     .top-page {
       @include column-center;
       width: 35%;
-      left: 0;
-
-  
-      nav {
-        @include row-center;
-        width: 35%;
-        background-color: $first-color;
-        color: white;
-        font-family: $nav-font;
-      }
+      // left: 0;
+      margin-top: 12vh;
     
       .header {
         width: 35%;
-        justify-content: flex-start;
-        margin-top: 5vh;
+        justify-content: center;
+        align-content: center;
         position: fixed;
         left: 0;
         top: 0;
         bottom: 0;
+
 
         .profile-image {
           margin-top: 5vh;
@@ -154,6 +155,7 @@ body {
     }
   
     main {
+      margin-top: 12vh;
       @include row-center;
       justify-content: center;
       width: 65%;

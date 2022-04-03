@@ -4,7 +4,7 @@ html {
 }
 @media only screen and (max-width: 1023px) {
   html {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 
@@ -22,17 +22,10 @@ body {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
+    justify-content: center;
   }
 }
-@media only screen and (max-width: 1023px) {
-  body .top-page {
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-  }
-}
-body .top-page nav {
+body nav {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -40,6 +33,14 @@ body .top-page nav {
   background-color: #257cbf;
   color: white;
   font-family: "Bungee", cursive;
+}
+@media only screen and (max-width: 1023px) {
+  body .top-page {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    width: 100%;
+  }
 }
 body .top-page .header {
   display: flex;
@@ -138,26 +139,26 @@ body .top-toogle:hover {
     flex-flow: row wrap;
     align-items: center;
   }
+  body nav {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 100%;
+    background-color: #257cbf;
+    color: white;
+    font-family: "Bungee", cursive;
+  }
   body .top-page {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     width: 35%;
-    left: 0;
-  }
-  body .top-page nav {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    width: 35%;
-    background-color: #257cbf;
-    color: white;
-    font-family: "Bungee", cursive;
+    margin-top: 12vh;
   }
   body .top-page .header {
     width: 35%;
-    justify-content: flex-start;
-    margin-top: 5vh;
+    justify-content: center;
+    align-content: center;
     position: fixed;
     left: 0;
     top: 0;
@@ -167,6 +168,7 @@ body .top-toogle:hover {
     margin-top: 5vh;
   }
   body main {
+    margin-top: 12vh;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
