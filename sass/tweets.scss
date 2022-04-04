@@ -13,6 +13,7 @@
     border: 3px solid black;
     border-radius: 10px;
     margin-bottom: 1vh;
+    &:hover{box-shadow: $text-color 0px 5px 15px;}
     
     header {
       @include row-center;
