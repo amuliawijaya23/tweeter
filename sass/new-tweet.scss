@@ -4,32 +4,29 @@
   width: 90%;
   font-size: 1.5rem;
   margin-bottom: 1vh;
-
   h2 {display: none};
-
   #invalid {
-    display: flex;
+    display: none;
     justify-content: center;
     color: $arrow-color;
     padding: 5px;
     border-radius: 5px;
+    border: 2px solid red;
   }
-
-  form {
-    
+  form {    
     textarea {
       width: 100%;
       outline: none;
       border: none;
       border-bottom: 2px solid black;
+      font-size: 2.2rem;
     }
-
     div {
       @include row-center;
       justify-content: space-between;
       margin-top: 1vh;
+      font-size: 2.2rem;
     }
-
     button {
       background-color: $first-color;
       color: white;

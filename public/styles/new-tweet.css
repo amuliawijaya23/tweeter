@@ -7,17 +7,19 @@
   display: none;
 }
 .new-tweet #invalid {
-  display: flex;
+  display: none;
   justify-content: center;
   color: #F4210A;
   padding: 5px;
   border-radius: 5px;
+  border: 2px solid red;
 }
 .new-tweet form textarea {
   width: 100%;
   outline: none;
   border: none;
   border-bottom: 2px solid black;
+  font-size: 2.2rem;
 }
 .new-tweet form div {
   display: flex;
@@ -25,6 +27,7 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 1vh;
+  font-size: 2.2rem;
 }
 .new-tweet form button {
   background-color: #257cbf;

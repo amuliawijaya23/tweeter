@@ -182,7 +182,7 @@ body .top-toogle:hover {
     margin-top: 5vh;
   }
   body main {
-    margin-top: 12vh;
+    margin-top: 15vh;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -191,5 +191,10 @@ body .top-toogle:hover {
     right: 0;
     top: 0;
     bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-height: 600px) {
+  body main {
+    margin-top: 20vh;
   }
 }

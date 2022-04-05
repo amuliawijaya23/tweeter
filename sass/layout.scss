@@ -7,18 +7,19 @@ html {
     font-size: 10px;
    }
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
 
 body {
-  @media only screen and (max-width: 1023px) {
-    @include column-center;
-    justify-content: center;
-   }
   background-color: white;
   font-family: $text-font;
   width: 100vw;
+  @media only screen and (max-width: 1023px) {
+    @include column-center;
+    justify-content: center;
+  }
 
   nav {
     @include row-center;
@@ -35,18 +36,17 @@ body {
     }
   
     .header {
+      @include column-center;
+      background-color: $second-color;
       @media only screen and (max-width: 1023px) {
         width: 100%;
       }
-      @include column-center;
-      background-color: $second-color;
 
       .profile-image {
         padding: 10px;
         justify-content: center;
       }
     }
-
   }
 
   main {
@@ -84,9 +84,7 @@ body {
       justify-content: center;
       padding: 10px;
       margin-bottom: 1vh;
-
       a {margin: 0 2vw; font-size: 1.5rem; margin-top: 0.5vh; text-decoration: none};
-
     }
   }
 
@@ -136,13 +134,11 @@ body {
         p {display: flex; font-family: $text-font; font-size: 2rem;};
         i {font-size: 2.5rem; margin: 0 0.5vw};
       }
-
     }
 
     .top-page {
       @include column-center;
       width: 35%;
-      // left: 0;
       margin-top: 12vh;
     
       .header {
@@ -154,7 +150,6 @@ body {
         top: 0;
         bottom: 0;
 
-
         .profile-image {
           margin-top: 5vh;
         }
@@ -162,13 +157,16 @@ body {
     }
   
     main {
-      margin-top: 12vh;
+      margin-top: 15vh;
       @include row-center;
       justify-content: center;
       width: 65%;
       right: 0;
       top: 0;
       bottom: 0;
+      @media only screen and (max-height: 600px) {
+        margin-top: 20vh;
+      };
     }
   }
 }

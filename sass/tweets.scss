@@ -4,8 +4,8 @@
   @include column-center;
   width: 90%;
   padding: 10px;
-  margin-top: 1vh;
-  
+  margin-top: 1vh;  
+
   .tweets {
     width: 100%;
     background-color: $note-color;
@@ -14,12 +14,11 @@
     border-radius: 10px;
     margin-bottom: 1vh;
     &:hover{box-shadow: $text-color 0px 5px 15px;}
-    
+
     header {
       @include row-center;
       justify-content: space-between;
       padding: 5px;
-
       img {width: 3.5rem; height: 3.5rem; padding: 2px;};
       h2 {font-size: 2rem};
       a {font-size: 1.5rem; text-decoration: none; margin-right: 0.5vw};
@@ -30,7 +29,6 @@
       padding: 5px;
       justify-items: space-around;
       font-size: 1.5rem;
-
     }
 
     .tweet {
@@ -45,7 +43,6 @@
       @include row-center;
       justify-content: space-between;
       padding: 5px;
-
       p {margin: 0 0.5vw};
       i {
         margin: 0 0.5vw;

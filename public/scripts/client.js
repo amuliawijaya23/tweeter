@@ -47,15 +47,21 @@ $(document).ready(function() {
   const postTweet = () => {
     // if text area is empty
     if (!$('#tweet-text').val().trim()) {
-      $('#invalid').text('You cannot post an empty tweet!');
-      $('#invalid').css({'border': '2px solid red'}).show();
+      $('#invalid').text('You cannot post an empty tweet!').show();
       $('#tweet-text').val(''),focus();
+      setTimeout(() => {
+        $('#invalid').text('');
+        $('#invalid').hide();
+      }, 2000);
 
       // if text area exceeds 140 characters
     } else if ($('#tweet-text').val().length > 140) {
-      $('#invalid').text('Your tweet is too long!');
-      $('#error').css({'border': '2px solid red'}).show();
+      $('#invalid').text('Your tweet is too long!').show();
       $('#tweet-text').focus();
+      setTimeout(() => {
+        $('#invalid').text('');
+        $('#invalid').hide();
+      }, 2000)
     } else {     
       $.ajax({
         data: $('form').serialize(),
